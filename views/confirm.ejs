@@ -1,20 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Confirm-email</title>
-</head>
-<body>
-	
-	<% if(locals.data){%>
-		<p>Enter the code sent in <%- data %></p>
-	<% } %>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirm-email</title>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <main id="main">
+      <div class="container">
+        <div class="circle_up"></div>
+        <div class="container__child">
+          <div class="container__header">
+            <h1 class="header">CONFIRM</h1>
+          </div>
+          <div class="form__container">
+            <% if(locals.data){%>
+            <div class="form__error">
+              <p>Enter the code sent in <%- data %></p>
+              <% } %>
+            </div>
 
-	<form method="post" action="confirm">
-		<input type="number" name="pin" placeholder="Enter the code" autocomplete="off" required> <% if(locals.err){%> <p><%- err%></p> <% }%> <br>
-		<input type="submit" name="submit" value="Confirm">
-	</form>
-
-</body>
+            <form method="post" action="confirm" class="form">
+              <input
+                class="input__box"
+                type="number"
+                name="pin"
+                placeholder="Enter the code"
+                autocomplete="off"
+                required
+              />
+              <% if(locals.err){%>
+              <p><%- err%></p>
+              <% }%> <br />
+              <input
+                type="submit"
+                name="submit"
+                value="Confirm"
+                class="input__btn"
+              />
+            </form>
+          </div>
+        </div>
+        <div class="circle_down"></div>
+      </div>
+    </main>
+  </body>
 </html>

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -121,5 +121,100 @@ body {
   color: black;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+#main .container__child .form__container {
+  margin-top: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#main .container__child .form__container .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#main .container__child .form__container .form .input__box {
+  width: 80%;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: -0.2rem -0.2rem 0.2rem white, 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2), 0.15rem 0.15rem 0.2rem rgba(0, 0, 0, 0.3) inset, -0.25rem -0.25rem 0.2rem white inset;
+          box-shadow: -0.2rem -0.2rem 0.2rem white, 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2), 0.15rem 0.15rem 0.2rem rgba(0, 0, 0, 0.3) inset, -0.25rem -0.25rem 0.2rem white inset;
+  font-size: 1.2rem;
+  outline: none;
+}
+
+#main .container__child .form__container .form .input__box::-webkit-input-placeholder {
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  outline: none;
+}
+
+#main .container__child .form__container .form .input__box:-ms-input-placeholder {
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  outline: none;
+}
+
+#main .container__child .form__container .form .input__box::-ms-input-placeholder {
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  outline: none;
+}
+
+#main .container__child .form__container .form .input__box::placeholder {
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  outline: none;
+}
+
+#main .container__child .form__container .form .input__btn {
+  text-align: center;
+  margin: 1.5rem 0.5rem 0.5rem 0.5rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: -0.1rem -0.1rem 0.1rem rgba(255, 255, 255, 0.8), 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
+          box-shadow: -0.1rem -0.1rem 0.1rem rgba(255, 255, 255, 0.8), 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  padding: 1rem 7rem;
+  font-size: 1.5rem;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+}
+
+#main .container__child .form__container .form .input__btn:hover {
+  -webkit-box-shadow: -0.2rem -0.2rem 0.3rem rgba(255, 255, 255, 0.8), 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
+          box-shadow: -0.2rem -0.2rem 0.3rem rgba(255, 255, 255, 0.8), 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
+}
+
+#main .container__child .form__container .form__error {
+  text-align: center;
+  background-color: rgba(223, 47, 47, 0.3);
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+#main .container__child .form__container .form__error .heading {
+  font-size: 1.3rem;
+  padding: 0.3rem;
 }
 /*# sourceMappingURL=index.css.map */
