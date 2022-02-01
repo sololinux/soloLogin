@@ -1,0 +1,6 @@
+{
+    "Mongo_db_url": "<mongo db url with ip access>",
+    "username" : "<email address  [i prefere zohomail for convinent use aslo this program has zohomail config to send mail] >",
+    "pass" : "<password>"
+}
+

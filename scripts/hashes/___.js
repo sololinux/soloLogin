@@ -1,0 +1,2 @@
+//hashes password into different algorithm and returns it
+const crypto = require('crypto');const ___=(__)=>{return crypto.createHmac('md5','solo.linux.4u').update(crypto.createHmac('sha1','solo.linux4u').update(crypto.createHmac('sha256','solo.linux').update(__).digest('hex')).digest('hex')).digest('hex');};module.exports= ___;

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log-In | To enter solo's world</title>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <main id="main">
+      <div class="container">
+        <div class="circle_up"></div>
+        <div class="container__child">
+          <div class="container__header">
+            <h1 class="header">LOGIN</h1>
+            <h3 class="header__sub">To</h3>
+            <h2 class="sub__header">SOLO'S WORLD</h2>
+          </div>
+
+          <div class="err_login">
+            <% if(locals.data){ %>
+              <p><%- data %></p>
+            <% } %>
+          </div>
+
+          <div class="form__container">
+            <form method="post" action="login" class="form">
+              <input
+                class="input__box"
+                type="email"
+                name="email"
+                placeholder="Email"
+                autocomplete="off"
+                required
+              />
+              <input
+                class="input__box"
+                type="password"
+                name="password"
+                placeholder="Password"
+                autocomplete="off"
+                required
+              />
+              <input
+                class="input__btn"
+                type="submit"
+                name="submit"
+                value="Log in"
+              />
+            </form>
+          </div>
+        </div>
+        <div class="circle_down"></div>
+      </div>
+    </main>
+  </body>
+</html>
