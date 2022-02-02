@@ -21,4 +21,11 @@
   <h2>Using Method</h2>
 </div>
 
+```
+git clone https://github.com/sololinux/soloLogin.git
+```
+
+```
+node index.js
+```
 
