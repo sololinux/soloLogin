@@ -1,6 +1,12 @@
 # soloLogin
-Simple login authentication mode with email validation in node.js
-<br/><br/>
+<br/>
+
+<div>
+  <h2>Note:</h2>
+  <p>Edit the credinals.json file with your own Mongodb uri and email-username and password</p>
+  <p>Or else the program won't work</p>
+</div>
+
 <div id="intro">
   <h2>Features</h2>
   <p>1. Consists of signup and signin.</p>
@@ -14,10 +20,5 @@ Simple login authentication mode with email validation in node.js
 <div>
   <h2>Using Method</h2>
 </div>
-``` python:
-  git clone https://github.com/sololinux/soloLogin.git 
-```
-```console
-foo@bar:~$ whoami
-foo
+
 
